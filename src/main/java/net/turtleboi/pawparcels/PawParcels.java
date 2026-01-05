@@ -2,6 +2,7 @@ package net.turtleboi.pawparcels;
 
 import net.turtleboi.pawparcels.block.ModBlocks;
 import net.turtleboi.pawparcels.entity.ModEntities;
+import net.turtleboi.pawparcels.item.ModCreativeModeTabs;
 import net.turtleboi.pawparcels.item.ModItems;
 import org.slf4j.Logger;
 
@@ -27,6 +28,8 @@ public class PawParcels {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModEntities.register(modEventBus);
+
+        ModCreativeModeTabs.register(modEventBus);
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {

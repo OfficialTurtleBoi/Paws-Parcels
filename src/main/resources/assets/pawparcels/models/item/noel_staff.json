@@ -1,0 +1,18 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "neoforge:separate_transforms",
+  "base": {
+    "parent": "pawparcels:item/noel_staff_held"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "pawparcels:item/noel_staff_item"
+    },
+    "ground": {
+      "parent": "pawparcels:item/noel_staff_item"
+    },
+    "fixed": {
+      "parent": "pawparcels:item/noel_staff_item"
+    }
+  }
+}
