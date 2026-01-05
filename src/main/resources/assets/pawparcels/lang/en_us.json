@@ -1,0 +1,13 @@
+{
+  "itemGroup.pawparcels": "Example Mod Tab",
+  "block.pawparcels.example_block": "Example Block",
+  "item.pawparcels.example_item": "Example Item",
+
+  "pawparcels.configuration.title": "Paws & Parcels Configs",
+  "pawparcels.configuration.section.pawparcels.common.toml": "Paws & Parcels Configs",
+  "pawparcels.configuration.section.pawparcels.common.toml.title": "Paws & Parcels Configs",
+  "pawparcels.configuration.items": "Item List",
+  "pawparcels.configuration.logDirtBlock": "Log Dirt Block",
+  "pawparcels.configuration.magicNumberIntroduction": "Magic Number Text",
+  "pawparcels.configuration.magicNumber": "Magic Number"
+}
