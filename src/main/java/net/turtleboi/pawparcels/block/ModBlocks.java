@@ -28,8 +28,7 @@ public class ModBlocks {
         return registerBlock(name, baseProperties, Block::new);
     }
 
-    private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<BlockBehaviour.Properties> baseProperties,
-                                                                    Function<BlockBehaviour.Properties, T> blockFactory) {
+    private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<BlockBehaviour.Properties> baseProperties, Function<BlockBehaviour.Properties, T> blockFactory) {
         DeferredBlock<T> holder = BLOCKS.register(name, (Identifier id) -> {
             ResourceKey<Block> key = ResourceKey.create(Registries.BLOCK, id);
             return blockFactory.apply(baseProperties.get().setId(key));

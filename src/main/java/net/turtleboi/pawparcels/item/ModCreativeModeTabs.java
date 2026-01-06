@@ -19,7 +19,7 @@ public class ModCreativeModeTabs {
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> PAWPARCELS_TAB =
             CREATIVE_MODE_TAB.register("pawparcels_tab", () -> CreativeModeTab.builder()
                     .icon(() -> new ItemStack(ModItems.SUGAR_COOKIE.get()))
-                    .title(Component.translatable("creativetab.pawparcels.pawparcels_tab"))
+                    .title(Component.translatable("itemGroup.pawparcels"))
                     .displayItems((params, output) -> {
                         output.accept(ModBlocks.HEARTH.get());
                         output.accept(ModItems.SUGAR_COOKIE.get());
@@ -27,6 +27,10 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.NOEL_STAFF.get());
                         output.accept(ModItems.MISTLE_TOE.get());
                         output.accept(ModItems.HEARTHSTONE.get());
+                        output.accept(ModItems.COMMON_GIFT.get());
+                        output.accept(ModItems.UNCOMMON_GIFT.get());
+                        output.accept(ModItems.RARE_GIFT.get());
+                        output.accept(ModItems.EPIC_GIFT.get());
                     })
                     .build()
             );

@@ -1,6 +1,7 @@
 package net.turtleboi.pawparcels;
 
 import net.turtleboi.pawparcels.block.ModBlocks;
+import net.turtleboi.pawparcels.effect.ModEffects;
 import net.turtleboi.pawparcels.entity.ModEntities;
 import net.turtleboi.pawparcels.item.ModCreativeModeTabs;
 import net.turtleboi.pawparcels.item.ModItems;
@@ -28,6 +29,7 @@ public class PawParcels {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModEntities.register(modEventBus);
+        ModEffects.register(modEventBus);
 
         ModCreativeModeTabs.register(modEventBus);
     }

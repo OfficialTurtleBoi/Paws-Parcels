@@ -1,13 +1,18 @@
 {
-  "itemGroup.pawparcels": "Example Mod Tab",
-  "block.pawparcels.example_block": "Example Block",
-  "item.pawparcels.example_item": "Example Item",
+  "itemGroup.pawparcels": "Paws & Parcels",
+  "block.pawparcels.hearth": "Hearth",
+  "item.pawparcels.hearth": "Hearth",
+  "item.pawparcels.hearthstone": "Hearthstone",
+  "item.pawparcels.mistletoe": "Mistletoe",
+  "item.pawparcels.noel_staff": "Staff of Saint Noel",
+  "item.pawparcels.silver_bell": "Silver Bell",
+  "item.pawparcels.sugar_cookie": "Sugar Cookie",
+  "item.pawparcels.common_gift": "Festive Present",
+  "item.pawparcels.uncommon_gift": "Festive Present",
+  "item.pawparcels.rare_gift": "Festive Present",
+  "item.pawparcels.epic_gift": "Festive Present",
 
   "pawparcels.configuration.title": "Paws & Parcels Configs",
   "pawparcels.configuration.section.pawparcels.common.toml": "Paws & Parcels Configs",
-  "pawparcels.configuration.section.pawparcels.common.toml.title": "Paws & Parcels Configs",
-  "pawparcels.configuration.items": "Item List",
-  "pawparcels.configuration.logDirtBlock": "Log Dirt Block",
-  "pawparcels.configuration.magicNumberIntroduction": "Magic Number Text",
-  "pawparcels.configuration.magicNumber": "Magic Number"
+  "pawparcels.configuration.section.pawparcels.common.toml.title": "Paws & Parcels Configs"
 }

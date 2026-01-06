@@ -2,7 +2,9 @@
   "required": true,
   "package": "net.turtleboi.pawparcels.mixin",
   "compatibilityLevel": "JAVA_21",
-  "mixins": [],
+  "mixins": [
+    "MerchantMenuAccessor"
+  ],
   "injectors": {
     "defaultRequire": 1
   },
