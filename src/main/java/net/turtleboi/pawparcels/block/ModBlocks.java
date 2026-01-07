@@ -12,6 +12,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.turtleboi.pawparcels.PawParcels;
+import net.turtleboi.pawparcels.block.custom.HearthBlock;
 import net.turtleboi.pawparcels.item.ModItems;
 
 import java.util.function.Function;
@@ -21,12 +22,12 @@ public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS =
             DeferredRegister.createBlocks(PawParcels.MOD_ID);
 
-    public static final DeferredBlock<Block> HEARTH = registerSimpleBlock("hearth",
-            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BRICKS));
-
-    private static DeferredBlock<Block> registerSimpleBlock(String name, Supplier<BlockBehaviour.Properties> baseProperties) {
-        return registerBlock(name, baseProperties, Block::new);
-    }
+    public static final DeferredBlock<Block> HEARTH = registerBlock("hearth",
+            () -> BlockBehaviour.Properties.ofFullCopy(Blocks.STONE_BRICKS)
+                    .strength(3.5F)
+                    .lightLevel(state -> state.getValue(HearthBlock.LIT) ? 12 : 0)
+                    .randomTicks(),
+            HearthBlock::new);
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<BlockBehaviour.Properties> baseProperties, Function<BlockBehaviour.Properties, T> blockFactory) {
         DeferredBlock<T> holder = BLOCKS.register(name, (Identifier id) -> {

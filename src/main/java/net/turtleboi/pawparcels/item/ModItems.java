@@ -39,7 +39,7 @@ public class ModItems {
             () -> new Item.Properties().stacksTo(1), Item::new);
 
     public static final DeferredItem<Item> HEARTHSTONE = registerItem("hearthstone",
-            () -> new Item.Properties().stacksTo(1), HearthstoneItem::new);
+            () -> new Item.Properties().stacksTo(1), properties -> new HearthstoneItem(properties, 20 * 90));
 
     public static final DeferredItem<Item> COMMON_GIFT = registerItem("common_gift",
             () -> new Item.Properties(), GiftItem::new);
