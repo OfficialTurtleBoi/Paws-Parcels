@@ -6,11 +6,13 @@ import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.SpawnEggItem;
 import net.minecraft.world.item.component.Weapon;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.turtleboi.pawparcels.PawParcels;
+import net.turtleboi.pawparcels.entity.ModEntities;
 import net.turtleboi.pawparcels.item.custom.*;
 
 import java.util.function.Function;
@@ -50,6 +52,9 @@ public class ModItems {
 
     public static final DeferredItem<Item> EPIC_GIFT = registerItem("epic_gift",
             () -> new Item.Properties().rarity(Rarity.EPIC), GiftItem::new);
+
+    public static final DeferredItem<SpawnEggItem> MITTEN_MOUSE_SPAWN_EGG = ITEMS.registerItem("mitten_mouse_spawn_egg",
+            properties -> new SpawnEggItem(properties.spawnEgg(ModEntities.MITTEN_MOUSE.get())));
 
     private static <T extends Item> DeferredItem<T> registerItem(String name, Supplier<Item.Properties> props, Function<Item.Properties, T> itemFactory) {
         return ITEMS.register(name, (Identifier id) -> {

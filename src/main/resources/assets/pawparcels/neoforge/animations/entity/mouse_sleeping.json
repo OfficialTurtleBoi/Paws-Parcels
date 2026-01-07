@@ -1,0 +1,1 @@
+{"length":5,"animations":[{"bone":"body","target":"scale","keyframes":[{"timestamp":0,"target":[1,1,1],"interpolation":"linear"},{"timestamp":2.5,"target":[1.1,1.1,1],"interpolation":"bezier"},{"timestamp":5,"target":[1,1,1],"interpolation":"linear"}]}],"loop":true}

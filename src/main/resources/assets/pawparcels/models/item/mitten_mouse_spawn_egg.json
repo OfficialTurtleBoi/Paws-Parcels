@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "pawparcels:item/hearthstone_on"
+    "layer0": "pawparcels:item/mitten_mouse_spawn_egg"
   }
 }

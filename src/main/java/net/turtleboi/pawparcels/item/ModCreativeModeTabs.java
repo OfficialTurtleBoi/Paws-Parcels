@@ -31,6 +31,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.UNCOMMON_GIFT.get());
                         output.accept(ModItems.RARE_GIFT.get());
                         output.accept(ModItems.EPIC_GIFT.get());
+                        output.accept(ModItems.MITTEN_MOUSE_SPAWN_EGG.get());
                     })
                     .build()
             );
