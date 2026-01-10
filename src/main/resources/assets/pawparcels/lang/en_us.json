@@ -11,6 +11,14 @@
   "item.pawparcels.uncommon_gift": "Festive Present",
   "item.pawparcels.rare_gift": "Festive Present",
   "item.pawparcels.epic_gift": "Festive Present",
+  "item.pawparcels.mitten_mouse_spawn_egg": "Mitten Mouse Spawn Egg",
+
+  "effect.pawparcels.brittle": "Brittle",
+  "effect.pawparcels.jolly": "Jolly",
+  "effect.pawparcels.sundered": "Sundered",
+
+  "entity.pawparcels.mitten_mouse": "Mitten Mouse",
+  "entity.pawparcels.ornament": "Ornament",
 
   "pawparcels.configuration.title": "Paws & Parcels Configs",
   "pawparcels.configuration.section.pawparcels.common.toml": "Paws & Parcels Configs",

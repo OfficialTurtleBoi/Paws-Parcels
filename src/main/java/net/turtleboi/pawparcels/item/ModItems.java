@@ -25,33 +25,39 @@ public class ModItems {
             () -> new Item.Properties().food(ModFoods.SUGAR_COOKIE), properties -> new SugarCookieItem(properties, 20 * 30, 0));
 
     public static final DeferredItem<Item> SILVER_BELL = registerItem("silver_bell",
-            () -> new Item.Properties().stacksTo(1), properties -> new SilverBellItem(properties, 20 * 60, 20 * 90, 12.0f));
+            () -> new Item.Properties().rarity(Rarity.UNCOMMON).stacksTo(1), properties -> new SilverBellItem(properties, 20 * 60, 20 * 90, 12.0f));
 
     public static final DeferredItem<Item> NOEL_STAFF = registerItem("noel_staff",
             () -> new Item.Properties()
                     .stacksTo(1)
                     .durability(1561)
                     .attributes(NoelStaffItem.createNoelStaffAttributes())
+                    .rarity(Rarity.EPIC)
                     .component(DataComponents.WEAPON, new Weapon(1)),
             NoelStaffItem::new);
 
     public static final DeferredItem<Item> MISTLE_TOE = registerItem("mistletoe",
-            () -> new Item.Properties().stacksTo(1), Item::new);
+            () -> new Item.Properties().rarity(Rarity.UNCOMMON).stacksTo(1), Item::new);
 
     public static final DeferredItem<Item> HEARTHSTONE = registerItem("hearthstone",
-            () -> new Item.Properties().stacksTo(1), properties -> new HearthstoneItem(properties, 20 * 90));
+            () -> new Item.Properties().rarity(Rarity.RARE).stacksTo(1), properties -> new HearthstoneItem(properties, 20 * 90));
 
     public static final DeferredItem<Item> COMMON_GIFT = registerItem("common_gift",
-            () -> new Item.Properties(), GiftItem::new);
+            () -> new Item.Properties(),
+            properties -> new GiftItem(properties, Identifier.fromNamespaceAndPath(PawParcels.MOD_ID, "gifts/common")));
 
     public static final DeferredItem<Item> UNCOMMON_GIFT = registerItem("uncommon_gift",
-            () -> new Item.Properties().rarity(Rarity.UNCOMMON), GiftItem::new);
+            () -> new Item.Properties().rarity(Rarity.UNCOMMON),
+            properties -> new GiftItem(properties, Identifier.fromNamespaceAndPath(PawParcels.MOD_ID, "gifts/uncommon")));
 
     public static final DeferredItem<Item> RARE_GIFT = registerItem("rare_gift",
-            () -> new Item.Properties().rarity(Rarity.RARE), GiftItem::new);
+            () -> new Item.Properties().rarity(Rarity.RARE),
+            properties -> new GiftItem(properties, Identifier.fromNamespaceAndPath(PawParcels.MOD_ID, "gifts/rare")));
 
     public static final DeferredItem<Item> EPIC_GIFT = registerItem("epic_gift",
-            () -> new Item.Properties().rarity(Rarity.EPIC), GiftItem::new);
+            () -> new Item.Properties().rarity(Rarity.EPIC),
+            properties -> new GiftItem(properties, Identifier.fromNamespaceAndPath(PawParcels.MOD_ID, "gifts/epic")));
+
 
     public static final DeferredItem<SpawnEggItem> MITTEN_MOUSE_SPAWN_EGG = ITEMS.registerItem("mitten_mouse_spawn_egg",
             properties -> new SpawnEggItem(properties.spawnEgg(ModEntities.MITTEN_MOUSE.get())));

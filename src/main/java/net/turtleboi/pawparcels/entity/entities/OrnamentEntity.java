@@ -147,9 +147,9 @@ public class OrnamentEntity extends ThrowableProjectile {
             server.sendParticles(
                     ParticleTypes.SNOWFLAKE,
                     getX(), getY(), getZ(),
-                    12,
-                    0.15, 0.15, 0.15,
-                    0.02
+                    36,
+                    0.33, 0.33, 0.33,
+                    0.15
             );
         }
     }

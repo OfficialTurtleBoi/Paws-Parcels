@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "B": "minecraft:bricks",
+    "C": "minecraft:campfire"
+  },
+  "pattern": [
+    "BBB",
+    "B B",
+    "BCB"
+  ],
+  "result": {
+    "count": 1,
+    "id": "pawparcels:hearth"
+  }
+}

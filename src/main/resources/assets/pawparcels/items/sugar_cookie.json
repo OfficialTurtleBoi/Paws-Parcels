@@ -3,27 +3,32 @@
     "type": "minecraft:range_dispatch",
     "property": "minecraft:count",
     "scale": 1,
+    "normalize": true,
     "fallback": {
       "type": "minecraft:model",
       "model": "pawparcels:item/sugar_cookie1"
     },
-
-    "normalize": true,
     "entries": [
-      {
-        "threshold": 0.33,
-        "model": {
-          "type": "minecraft:model",
-          "model": "pawparcels:item/sugar_cookie2"
-        }
-      },
-      {
-        "threshold": 0.66,
-        "model": {
-          "type": "minecraft:model",
-          "model": "pawparcels:item/sugar_cookie3"
-        }
-      }
+      { "threshold": 0.0469, "model": { "type": "minecraft:model", "model": "pawparcels:item/sugar_cookie2" } },
+      { "threshold": 0.0938, "model": { "type": "minecraft:model", "model": "pawparcels:item/sugar_cookie3" } },
+      { "threshold": 0.1406, "model": { "type": "minecraft:model", "model": "pawparcels:item/sugar_cookie1" } },
+      { "threshold": 0.1875, "model": { "type": "minecraft:model", "model": "pawparcels:item/sugar_cookie2" } },
+      { "threshold": 0.2344, "model": { "type": "minecraft:model", "model": "pawparcels:item/sugar_cookie3" } },
+      { "threshold": 0.2813, "model": { "type": "minecraft:model", "model": "pawparcels:item/sugar_cookie1" } },
+      { "threshold": 0.3281, "model": { "type": "minecraft:model", "model": "pawparcels:item/sugar_cookie2" } },
+      { "threshold": 0.3750, "model": { "type": "minecraft:model", "model": "pawparcels:item/sugar_cookie3" } },
+      { "threshold": 0.4219, "model": { "type": "minecraft:model", "model": "pawparcels:item/sugar_cookie1" } },
+      { "threshold": 0.4688, "model": { "type": "minecraft:model", "model": "pawparcels:item/sugar_cookie2" } },
+      { "threshold": 0.5156, "model": { "type": "minecraft:model", "model": "pawparcels:item/sugar_cookie3" } },
+      { "threshold": 0.5625, "model": { "type": "minecraft:model", "model": "pawparcels:item/sugar_cookie1" } },
+      { "threshold": 0.6094, "model": { "type": "minecraft:model", "model": "pawparcels:item/sugar_cookie2" } },
+      { "threshold": 0.6563, "model": { "type": "minecraft:model", "model": "pawparcels:item/sugar_cookie3" } },
+      { "threshold": 0.7031, "model": { "type": "minecraft:model", "model": "pawparcels:item/sugar_cookie1" } },
+      { "threshold": 0.7500, "model": { "type": "minecraft:model", "model": "pawparcels:item/sugar_cookie2" } },
+      { "threshold": 0.7969, "model": { "type": "minecraft:model", "model": "pawparcels:item/sugar_cookie3" } },
+      { "threshold": 0.8438, "model": { "type": "minecraft:model", "model": "pawparcels:item/sugar_cookie1" } },
+      { "threshold": 0.8906, "model": { "type": "minecraft:model", "model": "pawparcels:item/sugar_cookie2" } },
+      { "threshold": 0.9375, "model": { "type": "minecraft:model", "model": "pawparcels:item/sugar_cookie3" } }
     ]
   }
 }
